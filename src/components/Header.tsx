@@ -2,6 +2,7 @@ import React from "react";
 
 import { Menu } from "lucide-react";
 import MaksimMyakinin from "./../assets/images/maksim-myakinin.jpg";
+import { ThemeToggle } from "./ThemeToogle";
 
 const links = [
     { href: "#experience", label: "Experience" },
@@ -29,21 +30,11 @@ export const Header: React.FC = () => {
                     <img
                         src={MaksimMyakinin}
                         alt="Maksim Myakinin"
-                        className="rounded-full"
+                        className="rounded-full border-2 border-neutral"
                         width={45}
                         height={45}
                     />
                 </a>
-
-                <button
-                    className="block md:hidden"
-                    type="button"
-                    onClick={onClickOpen}
-                    aria-expanded={open}
-                    aria-controls="main-menu"
-                >
-                    <Menu size={32} />
-                </button>
 
                 <nav
                     id="main-menu"
@@ -59,7 +50,7 @@ export const Header: React.FC = () => {
                                 <a
                                     href={item.href}
                                     onClick={closeMenu}
-                                    className="font-medium transition-all duration-500 hover:text-white"
+                                    className="font-medium transition-all duration-500 hover:text-primary"
                                 >
                                     {item.label}
                                 </a>
@@ -67,6 +58,20 @@ export const Header: React.FC = () => {
                         ))}
                     </ul>
                 </nav>
+
+                <div className="flex flex-row-reverse items-center gap-4">
+                    <button
+                        className="block md:hidden"
+                        type="button"
+                        onClick={onClickOpen}
+                        aria-expanded={open}
+                        aria-controls="main-menu"
+                    >
+                        <Menu size={32} />
+                    </button>
+
+                    <ThemeToggle />
+                </div>
             </div>
         </header>
     );

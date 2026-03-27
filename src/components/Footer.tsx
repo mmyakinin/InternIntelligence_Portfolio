@@ -6,7 +6,7 @@ const currentYear = new Date().getFullYear();
 
 export const Footer: React.FC = () => {
     return (
-        <footer className="w-full border-t border-neutral-200 py-8 text-center text-white">
+        <footer className="w-full border-t border-neutral-200 py-8 text-center text-title">
             <ul className="flex flex-wrap justify-center gap-5 mb-4">
                 <li>
                     <a href="https://linkedin.com/in/mmyakinin">
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
                     </a>
                 </li>
             </ul>
-            <p className="text-base text-white">
+            <p>
                 Made by Maksim Myakinin © {currentYear}
             </p>
         </footer>

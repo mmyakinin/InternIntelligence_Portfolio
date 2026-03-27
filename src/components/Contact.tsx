@@ -24,7 +24,7 @@ export const Contact: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.8 }}
-                    className="bg-[#1c232dd9]  p-10 max-[576px]:px-6 rounded-2xl"
+                    className="bg-secondary  p-10 max-[576px]:px-6 rounded-2xl"
                 >
                     <ContactForm />
                 </motion.div>

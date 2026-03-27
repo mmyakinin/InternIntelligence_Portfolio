@@ -9,6 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { FormInput } from "./form/FormInput";
 import { FormTextarea } from "./form/FormTextarea";
+import toast from "react-hot-toast";
 
 export const ContactForm: React.FC = () => {
     const form = useForm<TContactFormValues>({
@@ -22,7 +23,16 @@ export const ContactForm: React.FC = () => {
     });
 
     const onSubmit = async () => {
-        console.log(123);
+        try {
+            toast.success(
+                "Your message has been sent successfully. I’ll get back to you shortly.",
+            );
+        } catch (err) {
+            console.error(err);
+            toast.error(
+                "Something went wrong. Please try sending the form again.",
+            );
+        }
     };
 
     return (

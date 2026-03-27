@@ -19,7 +19,7 @@ export const Section: React.FC<React.PropsWithChildren<Props>> = ({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="text-[36px] md:text-[48px] text-white font-bold mb-8 md:mb-10"
+                className="text-[36px] md:text-[48px] text-title font-bold mb-8 md:mb-10"
             >
                 {title}
             </motion.h2>

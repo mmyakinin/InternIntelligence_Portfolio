@@ -55,10 +55,10 @@ export const Skills: React.FC = () => {
                                 stiffness: 100,
                                 delay: skill.delay,
                             }}
-                            className="flex flex-col items-center gap-4 text-center rounded-2xl border border-neutral/30 bg-[#1c232dd9] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/70"
+                            className="flex flex-col items-center gap-4 text-center rounded-2xl border border-neutral/30 bg-secondary p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/70"
                         >
                             <Icon size={44} className="text-neutral" />
-                            <h4 className="text-[18px] font-normal text-white">
+                            <h4 className="text-[18px] font-normal text-title">
                                 {skill.name}
                             </h4>
                         </motion.div>

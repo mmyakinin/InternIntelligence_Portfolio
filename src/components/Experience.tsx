@@ -54,7 +54,7 @@ export const Experience: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.6 }}
-                            className="mb-4 font-serif text-[28px] font-semibold text-white"
+                            className="mb-4 font-serif text-[28px] font-semibold text-title"
                         >
                             {job.company}
                         </motion.h3>
@@ -73,7 +73,7 @@ export const Experience: React.FC = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.6 }}
-                                className="text-[18px] text-white/70"
+                                className="text-[18px] font-semibold text-title/70"
                             >
                                 {job.startDate} - {job.endDate}
                             </motion.span>

@@ -53,16 +53,16 @@ export const Projects: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: item.delay }}
-                        className="grid grid-cols-1 sm:grid-cols-2 bg-[#1c232dd9] rounded-2xl"
+                        className="grid grid-cols-1 sm:grid-cols-2 bg-secondary rounded-2xl"
                     >
                         <div className="px-8 py-12">
                             <h3 className="text-primary text-[32px] font-semibold mb-4">
                                 {item.name}
                             </h3>
-                            <p className="text-[18px] text-white/70">
+                            <p className="text-[18px] text-title/70">
                                 {item.description}
                             </p>
-                            <div className="flex items-center gap-4 text-white pt-10">
+                            <div className="flex items-center gap-4 text-title pt-10">
                                 {item.source && (
                                     <a
                                         href={item.source}

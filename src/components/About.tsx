@@ -14,7 +14,7 @@ export const About: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.6 }}
-                        className="w-auto text-[18px] md:text-[20px] text-neutral md:pr-4 mb-4"
+                        className="w-auto dark:text-red text-[18px] md:text-[20px] text-neutral md:pr-4 mb-4"
                     >
                         Hi, I’m Maksim Myakinin, a Front-End Developer based in
                         Baku, Azerbaijan. I specialize in building modern,
@@ -47,7 +47,7 @@ export const About: React.FC = () => {
                         delay: 0.2,
                     }}
                     viewport={{ once: true }}
-                    className="h-80 w-64 shrink-0 rotate-[5deg] bg-white p-4 md:rotate-[7deg]"
+                    className="h-80 w-64 shrink-0 rotate-[5deg] bg-white p-4 md:rotate-[7deg] border-2"
                 >
                     <img src={MaksimMyakinin} alt="Maksim Myakinin" />
                 </motion.div>

@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="text-[48px] sm:text-[64px] md:text-[72px] font-bold text-white mb-4"
+                className="text-[48px] sm:text-[64px] md:text-[72px] font-bold text-title mb-4"
             >
                 Maksim Myakinin
             </motion.h1>

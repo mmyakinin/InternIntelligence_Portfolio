@@ -30,7 +30,7 @@ export const Header: React.FC = () => {
                     <img
                         src={MaksimMyakinin}
                         alt="Maksim Myakinin"
-                        className="rounded-full border-2 border-neutral"
+                        className="rounded-full border-2"
                         width={45}
                         height={45}
                     />

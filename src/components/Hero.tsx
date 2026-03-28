@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="text-primary text-[32px] sm:text-[40px] md:text-[48px] font-bold mb-8"
+                className="text-primary text-[36px] sm:text-[40px] md:text-[48px] font-bold mb-8"
             >
                 Front-End Developer
             </motion.h2>
@@ -39,10 +39,11 @@ export const Hero: React.FC = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 1 }}
-                href="mailto:maxim.myakinin@gmail.com"
+                href="/MAKSIM MYAKININ - Resume.pdf"
+                download
                 className="inline-block rounded-full bg-primary px-8 py-5 text-[18px] leading-5 font-medium text-white"
             >
-                Get in Touch
+                Dowland My CV
             </motion.a>
         </section>
     );

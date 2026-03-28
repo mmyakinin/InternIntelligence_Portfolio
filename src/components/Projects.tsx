@@ -44,7 +44,7 @@ const projects = [
 
 export const Projects: React.FC = () => {
     return (
-        <Section id="projects" title="Last Projects">
+        <Section id={"projects"} title="Last Projects">
             <div className="flex flex-col gap-8">
                 {projects.map((item) => (
                     <motion.div
@@ -53,7 +53,7 @@ export const Projects: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: item.delay }}
-                        className="grid grid-cols-1 sm:grid-cols-2 bg-secondary rounded-2xl"
+                        className="grid grid-cols-1 sm:grid-cols-2 bg-secondary rounded-2xl overflow-hidden"
                     >
                         <div className="px-8 py-12">
                             <h3 className="text-primary text-[32px] font-semibold mb-4">
@@ -82,6 +82,13 @@ export const Projects: React.FC = () => {
                                     <ExternalLink size={24} />
                                 </a>
                             </div>
+                        </div>
+                        <div className="h-full overflow-hidden">
+                            <img
+                                src={item.imgSrc}
+                                alt={item.name}
+                                className="w-full h-full object-cover object-top-left"
+                            />
                         </div>
                     </motion.div>
                 ))}

@@ -47,7 +47,7 @@ export const About: React.FC = () => {
                         delay: 0.2,
                     }}
                     viewport={{ once: true }}
-                    className="h-80 w-64 shrink-0 rotate-[5deg] bg-white p-4 md:rotate-[7deg] border-2"
+                    className="h-80 w-64 shrink-0 rotate-[5deg] bg-white p-4 md:rotate-[7deg] border-3 rounded-2xl"
                 >
                     <img src={MaksimMyakinin} alt="Maksim Myakinin" />
                 </motion.div>
